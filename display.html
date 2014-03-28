@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ByRef ByVal</title>
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="examples.css">
+    <script src="prism.js"></script>
+    <script src="utils.js"></script>
+    <script src="examples.js"></script>
+</head>
+<body>
+
+<template id="valueAssignmentTemplate">
+    <div class="outBox">
+        <h2></h2>
+        <blockquote>
+            <pre>
+                <code class="language-javascript"></code>
+            </pre>
+        </blockquote>
+        <h4>OUT:</h4>
+        <blockquote>
+            <table class="outBlock">
+                <thead>
+                <td>Param Name</td>
+                <td>State</td>
+                <td>Value</td>
+                </thead>
+            </table>
+        </blockquote>
+        <script></script>
+    </div>
+</template>
+
+<script>
+    blockBuilder.buildValueAssignmentBlock('Simple value assignment', examples.simpleValueAssignment);
+    blockBuilder.buildValueAssignmentBlock('Simple Object value assignment', examples.simpleObjectValueAssignment);
+    blockBuilder.buildValueAssignmentBlock('Constructed Object value assignment', examples.constructedObjectValueAssignment);
+    blockBuilder.buildValueAssignmentBlock('Array Wrapped value assignment', examples.arrayWrappedValueAssignment);
+    blockBuilder.buildValueAssignmentBlock('Simple function assignment', examples.simpleFunctionAssignment);
+    blockBuilder.buildValueAssignmentBlock('Array function assignment', examples.arrayFunctionAssignment);
+    blockBuilder.buildValueAssignmentBlock('Complex Array function assignment', examples.complexArrayFunctionAssignment);
+    blockBuilder.buildValueAssignmentBlock('Simple Object function assignment', examples.simpleObjectFunctionAssignment);
+    blockBuilder.buildValueAssignmentBlock('Constructed Object function assignment', examples.constructedObjectFunctionAssignment);
+    blockBuilder.buildValueAssignmentBlock('Constructed Object Alt function assignment', examples.constructedObjectAltFunctionAssignment);
+    blockBuilder.buildValueAssignmentBlock('Constructed Object Alt Callback function assignment', examples.constructedObjectAltCallbackFunctionAssignment);
+
+</script>
+
+</body>
+</html>
