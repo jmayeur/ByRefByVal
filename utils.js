@@ -12,7 +12,7 @@ var logManger = function(){
         },
         log: function(paramName, state, param){
             if(null != outElement){
-                outElement.innerHTML += '<tr><td class="name">' + paramName + '</span>'
+                outElement.innerHTML += '<tr><td class="name">' + paramName + '</td>'
                     + '<td class="state">' + state + '</td>'
                     + '<td class="value">' + param + '</td></tr>' ;
             }
